@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-box">
+            <form onsubmit="getData(event)" class="input-data">
+                <input type="text" class="search-bar" id="search-input" placeholder="Enter City Name" name="city" required>
+                <button class="search-btn" type="submit">Search</button>
+            </form>
+            <div class="message-box" aria-live="polite"></div>
+        </div>
+        
+        <div class="weather-info">
+            <div class="info-item"><strong>Country:</strong> <span id="country">-</span></div>
+            <div class="info-item"><strong>State:</strong> <span id="state">-</span></div>
+            <div class="info-item"><strong>City:</strong> <span id="city">-</span></div>
+            <div class="info-item"><strong>Humidity:</strong> <span id="humidity">-</span></div>
+            <div class="info-item"><strong>Temperature:</strong> <span id="temperature">-</span></div>
+            <div class="info-item"><strong>Wind Speed:</strong> <span id="wind-speed">-</span></div>
+            <div class="info-item"><strong>Weather:</strong> <span id="weather">-</span> <img src="" alt="" id="weather-icon"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
